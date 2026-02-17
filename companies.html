@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceConnect - Companies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-100 font-sans">
+
+    <!-- Navbar (reuse same as index.html) -->
+    <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">FinanceConnect</h1>
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+            <nav id="menu" class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-blue-200">Home</a>
+                <a href="companies.html" class="hover:text-blue-200">Companies</a>
+                <a href="loans.html" class="hover:text-blue-200">Loans</a>
+                <a href="investment.html" class="hover:text-blue-200">Investments</a>
+                <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
+                <a href="contact.html" class="hover:text-blue-200">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
+
+    <main class="pt-24 container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">
+            All Partner Companies
+        </h2>
+
+        <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Prime Finance</h3>
+                <p>Business loans & startup funding.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Global Credit</h3>
+                <p>Credit cards and consumer lending.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Future Wealth</h3>
+                <p>Retirement & wealth planning services.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">SmartLoans</h3>
+                <p>Quick loans with instant approval.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">InvestPlus</h3>
+                <p>Investment portfolios with high ROI.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">SecureInsure</h3>
+                <p>Insurance plans for individuals & families.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-blue-700 text-white text-center py-6 mt-10">
+        <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
+    </footer>
+</body>
+
+</html>

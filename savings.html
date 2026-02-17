@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceConnect - Savings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-100 font-sans">
+
+    <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">FinanceConnect</h1>
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+            <nav id="menu" class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-blue-200">Home</a>
+                <a href="companies.html" class="hover:text-blue-200">Companies</a>
+                <a href="loans.html" class="hover:text-blue-200">Loans</a>
+                <a href="investment.html" class="hover:text-blue-200">Investments</a>
+                <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
+                <a href="credit-cards.html" class="hover:text-blue-200">Cards</a>
+                <a href="savings.html" class="hover:text-blue-200">Savings</a>
+                <a href="blog.html" class="hover:text-blue-200">Blog</a>
+                <a href="contact.html" class="hover:text-blue-200">Contact</a>
+                <a href="about.html" class="hover:text-blue-200">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
+
+    <main class="pt-24 container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">Savings Plans</h2>
+
+        <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">SmartSave Account</h3>
+                <p>High-interest savings for individuals.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">FutureSaver Plan</h3>
+                <p>Long-term savings with bonus interest.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Family Savings Plus</h3>
+                <p>Flexible plan for families & children.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-700 text-white text-center py-6 mt-10">
+        <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
+    </footer>
+</body>
+
+</html>

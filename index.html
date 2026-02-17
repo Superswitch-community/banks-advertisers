@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceConnect - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-100 font-sans">
+
+    <!-- Navbar -->
+    <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">FinanceConnect</h1>
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+            <nav id="menu" class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-blue-200">Home</a>
+                <a href="companies.html" class="hover:text-blue-200">Companies</a>
+                <a href="loans.html" class="hover:text-blue-200">Loans</a>
+                <a href="investment.html" class="hover:text-blue-200">Investments</a>
+                <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
+                <a href="credit-cards.html" class="hover:text-blue-200">Cards</a>
+                <a href="savings.html" class="hover:text-blue-200">Savings</a>
+                <a href="blog.html" class="hover:text-blue-200">Blog</a>
+                <a href="contact.html" class="hover:text-blue-200">Contact</a>
+                <a href="about.html" class="hover:text-blue-200">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
+
+    <!-- Hero -->
+    <main class="pt-24">
+        <section
+            class="h-[80vh] bg-[url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c')] bg-cover bg-center relative">
+            <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-6">
+                <h2 class="text-4xl md:text-6xl text-white font-bold mb-4">
+                    Discover Trusted Financial Companies
+                </h2>
+                <p class="text-white text-lg mb-6">
+                    Compare loans, investments, insurance & more — all in one place.
+                </p>
+                <a href="companies.html"
+                    class="bg-blue-600 hover:bg-blue-500 px-8 py-3 rounded-lg text-white font-semibold transition">
+                    Explore Companies
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Partners -->
+        <section class="container mx-auto px-6 py-16">
+            <h3 class="text-3xl font-bold text-blue-700 text-center mb-10">
+                Featured Finance Partners
+            </h3>
+
+            <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(250px,1fr))]">
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <h4 class="font-bold text-xl mb-2">QuickLoan Ltd</h4>
+                    <p>Fast personal loans with low interest rates.</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">
+                        Visit Partner
+                    </button>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <h4 class="font-bold text-xl mb-2">SafeInvest</h4>
+                    <p>Smart investment plans for long-term growth.</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">
+                        Visit Partner
+                    </button>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <h4 class="font-bold text-xl mb-2">SecureInsure</h4>
+                    <p>Affordable insurance for individuals & businesses.</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">
+                        Visit Partner
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white text-center py-6 mt-10">
+        <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
+    </footer>
+</body>
+
+</html>
