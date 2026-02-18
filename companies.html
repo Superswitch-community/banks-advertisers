@@ -1,80 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <title>Financial Companies Directory | FinanceConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinanceConnect - Companies</title>
+    <meta name="description" content="Explore major financial institutions including banks, lenders, and investment firms for informational purposes.">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-blue-100 font-sans">
+<body class="bg-gray-100 font-sans text-gray-800">
 
-    <!-- Navbar (reuse same as index.html) -->
-    <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto flex justify-between items-center p-4">
+    <!-- HEADER -->
+    <header class="bg-blue-700 text-white fixed w-full top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
             <h1 class="text-xl font-bold">FinanceConnect</h1>
-            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-            <nav id="menu" class="hidden md:flex space-x-6">
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 font-medium">
                 <a href="index.html" class="hover:text-blue-200">Home</a>
-                <a href="companies.html" class="hover:text-blue-200">Companies</a>
+                <a href="companies.html" class="underline font-semibold">Companies</a>
                 <a href="loans.html" class="hover:text-blue-200">Loans</a>
                 <a href="investment.html" class="hover:text-blue-200">Investments</a>
                 <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
+                <a href="blog.html" class="hover:text-blue-200">Blog</a>
                 <a href="contact.html" class="hover:text-blue-200">Contact</a>
+                <a href="about.html" class="hover:text-blue-200">About</a>
             </nav>
+
+            <!-- Mobile Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600">
+            <div class="flex flex-col px-6 py-4 space-y-3">
+                <a href="index.html">Home</a>
+                <a href="companies.html" class="underline font-semibold">Companies</a>
+                <a href="loans.html">Loans</a>
+                <a href="investment.html">Investments</a>
+                <a href="insurance.html">Insurance</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
         </div>
     </header>
 
-    <script>
-        document.getElementById("menu-btn").addEventListener("click", function () {
-            document.getElementById("menu").classList.toggle("hidden");
-        });
-    </script>
+    <!-- MAIN -->
+    <main class="pt-28 pb-16 px-6">
 
-    <main class="pt-24 container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">
-            All Partner Companies
-        </h2>
+        <div class="max-w-6xl mx-auto">
 
-        <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-6">
+                Financial Companies Directory
+            </h2>
 
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">Prime Finance</h3>
-                <p>Business loans & startup funding.</p>
-            </div>
+            <p class="text-center max-w-3xl mx-auto mb-12 text-gray-600">
+                Below is a list of major financial institutions and service providers.
+                This information is provided for educational and comparison purposes only.
+                FinanceConnect is not affiliated with these institutions unless otherwise stated.
+            </p>
 
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">Global Credit</h3>
-                <p>Credit cards and consumer lending.</p>
-            </div>
+            <!-- GRID -->
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">Future Wealth</h3>
-                <p>Retirement & wealth planning services.</p>
-            </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">JPMorgan Chase</h3>
+                    <p class="text-gray-600">
+                        A multinational banking and financial services institution offering
+                        personal banking, business loans, and investment management.
+                    </p>
+                </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">SmartLoans</h3>
-                <p>Quick loans with instant approval.</p>
-            </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Bank of America</h3>
+                    <p class="text-gray-600">
+                        Provides consumer banking, credit cards, mortgage services,
+                        and wealth management solutions.
+                    </p>
+                </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">InvestPlus</h3>
-                <p>Investment portfolios with high ROI.</p>
-            </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Wells Fargo</h3>
+                    <p class="text-gray-600">
+                        Offers retail banking, loans, insurance products,
+                        and financial advisory services.
+                    </p>
+                </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">SecureInsure</h3>
-                <p>Insurance plans for individuals & families.</p>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Citibank</h3>
+                    <p class="text-gray-600">
+                        Global banking institution providing credit cards,
+                        savings accounts, and international banking services.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Goldman Sachs</h3>
+                    <p class="text-gray-600">
+                        Investment banking firm specializing in asset management,
+                        securities, and wealth advisory services.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">American Express</h3>
+                    <p class="text-gray-600">
+                        Financial services company known for credit cards,
+                        payment solutions, and travel-related financial services.
+                    </p>
+                </div>
+
             </div>
 
         </div>
+
     </main>
 
-    <footer class="bg-blue-700 text-white text-center py-6 mt-10">
-        <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
-    </footer>
-</body>
+    <!-- FOOTER -->
+    <footer class="bg-blue-700 text-white py-8 mt-10">
+        <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
 
+            <p>© 2026 FinanceConnect. All rights reserved.</p>
+
+            <p class="text-sm">
+                FinanceConnect is an independent informational website and not a bank,
+                lender, broker, or financial advisor. Content is for educational purposes only.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <a href="privacy-policy.html" class="underline hover:text-blue-200">Privacy Policy</a>
+                <a href="terms.html" class="underline hover:text-blue-200">Terms & Conditions</a>
+                <a href="contact.html" class="underline hover:text-blue-200">Contact</a>
+                <a href="about.html" class="underline hover:text-blue-200">About</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- MOBILE SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
 </html>
