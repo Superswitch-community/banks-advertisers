@@ -4,100 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinanceConnect - Home</title>
+    <title>FinanceConnect - Trusted Financial Information Platform</title>
+    <meta name="description"
+        content="FinanceConnect provides trusted financial insights, loan comparisons, investment education, insurance guides, and credit resources.">
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google AdSense -->
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1496447698823052"
+        crossorigin="anonymous"></script>
 </head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1496447698823052"
-     crossorigin="anonymous"></script>
-    
-<body class="bg-blue-100 font-sans">
+
+<body class="bg-gray-50 font-sans">
 
     <!-- Navbar -->
-    <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <h1 class="text-xl font-bold">FinanceConnect</h1>
-            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-            <nav id="menu" class="hidden md:flex space-x-6">
-                <a href="index.html" class="hover:text-blue-200">Home</a>
-                <a href="companies.html" class="hover:text-blue-200">Companies</a>
-                <a href="loans.html" class="hover:text-blue-200">Loans</a>
-                <a href="investment.html" class="hover:text-blue-200">Investments</a>
-                <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
-                <a href="credit-cards.html" class="hover:text-blue-200">Cards</a>
-                <a href="savings.html" class="hover:text-blue-200">Savings</a>
-                <a href="blog.html" class="hover:text-blue-200">Blog</a>
-                <a href="contact.html" class="hover:text-blue-200">Contact</a>
-                <a href="about.html" class="hover:text-blue-200">About</a>
-            </nav>
+    <header class="bg-blue-800 text-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <h1 class="text-xl font-bold">FinanceConnect</h1>
+
+                <!-- Mobile Button -->
+                <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+                    ☰
+                </button>
+
+                <!-- Desktop Menu -->
+                <nav id="menu"
+                    class="hidden md:flex md:items-center md:space-x-6 absolute md:static top-16 left-0 w-full md:w-auto bg-blue-800 md:bg-transparent flex-col md:flex-row p-4 md:p-0 space-y-3 md:space-y-0">
+                    <a href="index.html" class="hover:text-blue-200">Home</a>
+                    <a href="blog.html" class="hover:text-blue-200">Blog</a>
+                    <a href="companies.html" class="hover:text-blue-200">Companies</a>
+                    <a href="loans.html" class="hover:text-blue-200">Loans</a>
+                    <a href="investment.html" class="hover:text-blue-200">Investments</a>
+                    <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
+                    <a href="contact.html" class="hover:text-blue-200">Contact</a>
+                    <a href="about.html" class="hover:text-blue-200">About</a>
+                </nav>
+            </div>
         </div>
     </header>
 
+    <!-- Mobile Toggle Script -->
     <script>
         document.getElementById("menu-btn").addEventListener("click", function () {
             document.getElementById("menu").classList.toggle("hidden");
         });
     </script>
 
-    <!-- Hero -->
+    <!-- Main Content -->
     <main class="pt-24">
-        <section
-            class="h-[80vh] bg-[url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c')] bg-cover bg-center relative">
-            <div
-                class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-6">
-                <h2 class="text-4xl md:text-6xl text-white font-bold mb-4">
-                    Discover Trusted Financial Companies
-                </h2>
-                <p class="text-white text-lg mb-6">
-                    Compare loans, investments, insurance & more — all in one place.
-                </p>
-                <a href="companies.html"
-                    class="bg-blue-600 hover:bg-blue-500 px-8 py-3 rounded-lg text-white font-semibold transition">
-                    Explore Companies
-                </a>
-            </div>
+
+        <!-- Hero Section -->
+        <section class="bg-blue-900 text-white py-20 text-center px-6">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Trusted Financial Information & Comparisons
+            </h2>
+            <p class="max-w-3xl mx-auto text-lg mb-6">
+                FinanceConnect is an independent financial information platform.
+                We provide educational content, company comparisons, and helpful
+                guides to assist individuals in making informed financial decisions.
+            </p>
         </section>
 
-        <!-- Featured Partners -->
-        <section class="container mx-auto px-6 py-16">
-            <h3 class="text-3xl font-bold text-blue-700 text-center mb-10">
-                Featured Finance Partners
+        <!-- About Section -->
+        <section class="max-w-6xl mx-auto px-6 py-16">
+            <h3 class="text-3xl font-bold text-blue-800 mb-6 text-center">
+                About FinanceConnect
             </h3>
 
-            <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(250px,1fr))]">
+            <p class="text-gray-700 leading-relaxed mb-6">
+                Our mission is to simplify financial knowledge. We research and
+                analyze financial companies, loan products, savings accounts,
+                insurance policies, and investment opportunities. The content
+                published on this website is for informational purposes only
+                and does not constitute financial advice.
+            </p>
 
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                    <h4 class="font-bold text-xl mb-2">QuickLoan Ltd</h4>
-                    <p>Fast personal loans with low interest rates.</p>
-                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">
-                        Visit Partner
-                    </button>
+            <p class="text-gray-700 leading-relaxed">
+                We may earn commissions from some third-party providers featured
+                on this website. However, this does not influence our editorial
+                independence or recommendations.
+            </p>
+        </section>
+
+        <!-- Educational Section -->
+        <section class="bg-white py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <h3 class="text-3xl font-bold text-center text-blue-800 mb-10">
+                    Financial Topics We Cover
+                </h3>
+
+                <div class="grid gap-8 md:grid-cols-3">
+
+                    <div class="p-6 border rounded-lg">
+                        <h4 class="font-bold text-xl mb-3">Loans & Credit</h4>
+                        <p class="text-gray-600">
+                            Compare personal loans, understand interest rates,
+                            and learn how credit scores affect borrowing.
+                        </p>
+                    </div>
+
+                    <div class="p-6 border rounded-lg">
+                        <h4 class="font-bold text-xl mb-3">Investments</h4>
+                        <p class="text-gray-600">
+                            Explore long-term investment strategies,
+                            risk management, and portfolio diversification.
+                        </p>
+                    </div>
+
+                    <div class="p-6 border rounded-lg">
+                        <h4 class="font-bold text-xl mb-3">Insurance & Savings</h4>
+                        <p class="text-gray-600">
+                            Understand coverage options and compare savings
+                            products to build financial stability.
+                        </p>
+                    </div>
+
                 </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                    <h4 class="font-bold text-xl mb-2">SafeInvest</h4>
-                    <p>Smart investment plans for long-term growth.</p>
-                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">
-                        Visit Partner
-                    </button>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                    <h4 class="font-bold text-xl mb-2">SecureInsure</h4>
-                    <p>Affordable insurance for individuals & businesses.</p>
-                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">
-                        Visit Partner
-                    </button>
-                </div>
-
             </div>
         </section>
+
+        <!-- Call To Action -->
+        <section class="bg-blue-100 py-16 text-center px-6">
+            <h3 class="text-2xl font-bold mb-4">
+                Explore Financial Resources
+            </h3>
+            <p class="text-gray-700 mb-6">
+                Visit our blog and comparison pages to make informed
+                financial decisions backed by research and transparency.
+            </p>
+            <a href="blog.html"
+                class="bg-blue-700 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold">
+                Visit Blog
+            </a>
+        </section>
+
     </main>
 
     <!-- Footer -->
-    <footer class="bg-blue-700 text-white text-center py-6 mt-10">
-        <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
+    <footer class="bg-blue-800 text-white text-center py-8 mt-10">
+        <p class="mb-2">© 2026 FinanceConnect. All rights reserved.</p>
+        <p class="text-sm">
+            FinanceConnect is an independent financial information website.
+            We are not a bank or financial institution.
+        </p>
     </footer>
+
 </body>
-
-
 </html>
