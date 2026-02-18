@@ -10,53 +10,120 @@
 
 <body class="bg-blue-100 font-sans">
 
+    <!-- HEADER -->
     <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
         <div class="container mx-auto flex justify-between items-center p-4">
             <h1 class="text-xl font-bold">FinanceConnect</h1>
-            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-            <nav id="menu" class="hidden md:flex space-x-6">
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 font-medium">
                 <a href="index.html" class="hover:text-blue-200">Home</a>
                 <a href="companies.html" class="hover:text-blue-200">Companies</a>
                 <a href="loans.html" class="hover:text-blue-200">Loans</a>
                 <a href="investment.html" class="hover:text-blue-200">Investments</a>
                 <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
-                <a href="credit-cards.html" class="hover:text-blue-200">Cards</a>
+                <a href="credit-cards.html" class="underline font-semibold">Cards</a>
                 <a href="savings.html" class="hover:text-blue-200">Savings</a>
                 <a href="blog.html" class="hover:text-blue-200">Blog</a>
                 <a href="contact.html" class="hover:text-blue-200">Contact</a>
                 <a href="about.html" class="hover:text-blue-200">About</a>
             </nav>
+
+            <!-- Mobile Hamburger -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600">
+            <div class="flex flex-col px-6 py-4 space-y-3">
+                <a href="index.html">Home</a>
+                <a href="companies.html">Companies</a>
+                <a href="loans.html">Loans</a>
+                <a href="investment.html">Investments</a>
+                <a href="insurance.html">Insurance</a>
+                <a href="credit-cards.html" class="underline font-semibold">Cards</a>
+                <a href="savings.html">Savings</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
         </div>
     </header>
 
     <script>
-        document.getElementById("menu-btn").addEventListener("click", function () {
-            document.getElementById("menu").classList.toggle("hidden");
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
         });
     </script>
 
-    <main class="pt-24 container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">Credit Card Offers</h2>
+    <!-- MAIN -->
+    <main class="pt-28 container mx-auto px-6 py-16">
 
-        <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
-            <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold text-blue-700 text-center mb-6">Top Credit Card Offers & Guides</h2>
+
+        <p class="text-center max-w-3xl mx-auto mb-12 text-gray-700">
+            Compare the latest credit cards, their benefits, interest rates, and reward programs.
+            Find the card that suits your lifestyle — whether for travel, cashback, or low interest.
+        </p>
+
+        <!-- GRID OF CARDS -->
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
                 <h3 class="text-xl font-bold mb-2">Global Credit Platinum</h3>
-                <p>High rewards, travel benefits, and cashback.</p>
+                <p class="text-gray-600 mb-4">
+                    Earn high rewards, enjoy travel perks, and get exclusive cashback deals.
+                </p>
+                <a href="https://www.globalcredit.com/apply" target="_blank"
+                    class="block text-center bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition font-semibold">
+                    Apply Now
+                </a>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
                 <h3 class="text-xl font-bold mb-2">Prime Card Gold</h3>
-                <p>Low-interest credit with premium benefits.</p>
+                <p class="text-gray-600 mb-4">
+                    Low-interest credit card with premium benefits including airport lounge access.
+                </p>
+                <a href="https://www.primecard.com/apply" target="_blank"
+                    class="block text-center bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition font-semibold">
+                    Apply Now
+                </a>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
                 <h3 class="text-xl font-bold mb-2">SmartCash Card</h3>
-                <p>Instant approval and flexible payment options.</p>
+                <p class="text-gray-600 mb-4">
+                    Quick approval, flexible payment options, and cashback rewards on daily spending.
+                </p>
+                <a href="https://www.smartcash.com/apply" target="_blank"
+                    class="block text-center bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition font-semibold">
+                    Apply Now
+                </a>
             </div>
+
         </div>
+
+        <!-- Educational Section -->
+        <section class="mt-12 max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold mb-4">Credit Card Tips</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>Pay your balance in full to avoid interest charges.</li>
+                <li>Use cashback or rewards cards to maximize benefits.</li>
+                <li>Keep your credit utilization below 30% for a healthy score.</li>
+                <li>Compare annual fees before applying for a card.</li>
+            </ul>
+        </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer class="bg-blue-700 text-white text-center py-6 mt-10">
         <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
     </footer>
-</body>
 
+</body>
 </html>
