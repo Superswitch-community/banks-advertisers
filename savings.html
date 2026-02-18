@@ -10,53 +10,120 @@
 
 <body class="bg-blue-100 font-sans">
 
+    <!-- HEADER -->
     <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
         <div class="container mx-auto flex justify-between items-center p-4">
             <h1 class="text-xl font-bold">FinanceConnect</h1>
-            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-            <nav id="menu" class="hidden md:flex space-x-6">
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 font-medium">
                 <a href="index.html" class="hover:text-blue-200">Home</a>
                 <a href="companies.html" class="hover:text-blue-200">Companies</a>
                 <a href="loans.html" class="hover:text-blue-200">Loans</a>
                 <a href="investment.html" class="hover:text-blue-200">Investments</a>
                 <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
                 <a href="credit-cards.html" class="hover:text-blue-200">Cards</a>
-                <a href="savings.html" class="hover:text-blue-200">Savings</a>
+                <a href="savings.html" class="underline font-semibold">Savings</a>
                 <a href="blog.html" class="hover:text-blue-200">Blog</a>
                 <a href="contact.html" class="hover:text-blue-200">Contact</a>
                 <a href="about.html" class="hover:text-blue-200">About</a>
             </nav>
+
+            <!-- Mobile Hamburger -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600">
+            <div class="flex flex-col px-6 py-4 space-y-3">
+                <a href="index.html">Home</a>
+                <a href="companies.html">Companies</a>
+                <a href="loans.html">Loans</a>
+                <a href="investment.html">Investments</a>
+                <a href="insurance.html">Insurance</a>
+                <a href="credit-cards.html">Cards</a>
+                <a href="savings.html" class="underline font-semibold">Savings</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
         </div>
     </header>
 
     <script>
-        document.getElementById("menu-btn").addEventListener("click", function () {
-            document.getElementById("menu").classList.toggle("hidden");
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
         });
     </script>
 
-    <main class="pt-24 container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">Savings Plans</h2>
+    <!-- MAIN -->
+    <main class="pt-28 container mx-auto px-6 py-16">
 
-        <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
-            <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold text-blue-700 text-center mb-6">Savings Plans & Tips</h2>
+        <p class="text-center max-w-3xl mx-auto mb-12 text-gray-700">
+            Explore savings plans that help you grow your money safely. Learn tips to maximize returns
+            and achieve your financial goals faster.
+        </p>
+
+        <!-- GRID OF SAVINGS PLANS -->
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col items-center">
+                <img src="https://images.unsplash.com/photo-1599005327791-31bdf5e7b6b0?auto=format&fit=crop&w=400&q=80"
+                    alt="SmartSave Account" class="w-full h-40 object-cover rounded-lg mb-4">
                 <h3 class="text-xl font-bold mb-2">SmartSave Account</h3>
-                <p>High-interest savings for individuals.</p>
+                <p class="text-gray-600 mb-4 text-center">High-interest savings for individuals, perfect for short-term goals.</p>
+                <a href="https://www.smartsave.com" target="_blank"
+                    class="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition font-semibold">
+                    Learn More
+                </a>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col items-center">
+                <img src="https://images.unsplash.com/photo-1600607681331-cb23d3d80d88?auto=format&fit=crop&w=400&q=80"
+                    alt="FutureSaver Plan" class="w-full h-40 object-cover rounded-lg mb-4">
                 <h3 class="text-xl font-bold mb-2">FutureSaver Plan</h3>
-                <p>Long-term savings with bonus interest.</p>
+                <p class="text-gray-600 mb-4 text-center">Long-term savings with bonus interest to grow your wealth steadily.</p>
+                <a href="https://www.futuresaver.com" target="_blank"
+                    class="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition font-semibold">
+                    Learn More
+                </a>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col items-center">
+                <img src="https://images.unsplash.com/photo-1600880292153-5f0e2d48a9e7?auto=format&fit=crop&w=400&q=80"
+                    alt="Family Savings Plus" class="w-full h-40 object-cover rounded-lg mb-4">
                 <h3 class="text-xl font-bold mb-2">Family Savings Plus</h3>
-                <p>Flexible plan for families & children.</p>
+                <p class="text-gray-600 mb-4 text-center">Flexible plan for families & children with safe growth options.</p>
+                <a href="https://www.familysavings.com" target="_blank"
+                    class="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition font-semibold">
+                    Learn More
+                </a>
             </div>
+
         </div>
+
+        <!-- Educational Tips Section -->
+        <section class="mt-12 max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold mb-4">Savings Tips</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>Set aside a fixed percentage of your income every month.</li>
+                <li>Use high-yield savings accounts to grow your money faster.</li>
+                <li>Automate your savings to avoid spending it accidentally.</li>
+                <li>Compare interest rates across banks before choosing a plan.</li>
+            </ul>
+        </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer class="bg-blue-700 text-white text-center py-6 mt-10">
         <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
     </footer>
+
 </body>
 
 </html>
