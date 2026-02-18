@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <title>Top Loan Providers & Education | FinanceConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinanceConnect - Loans</title>
+    <meta name="description" content="Learn about reputable loan providers, types of loans, and tips for responsible borrowing. FinanceConnect provides educational content only.">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-blue-100 font-sans">
+<body class="bg-gray-100 font-sans text-gray-800">
 
-    <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto flex justify-between items-center p-4">
+    <!-- HEADER -->
+    <header class="bg-blue-700 text-white fixed w-full top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-xl font-bold">FinanceConnect</h1>
-            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-            <nav id="menu" class="hidden md:flex space-x-6">
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 font-medium">
                 <a href="index.html" class="hover:text-blue-200">Home</a>
                 <a href="companies.html" class="hover:text-blue-200">Companies</a>
-                <a href="loans.html" class="hover:text-blue-200">Loans</a>
+                <a href="loans.html" class="underline font-semibold">Loans</a>
                 <a href="investment.html" class="hover:text-blue-200">Investments</a>
                 <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
                 <a href="credit-cards.html" class="hover:text-blue-200">Cards</a>
@@ -26,36 +28,115 @@
                 <a href="contact.html" class="hover:text-blue-200">Contact</a>
                 <a href="about.html" class="hover:text-blue-200">About</a>
             </nav>
+
+            <!-- Mobile Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600">
+            <div class="flex flex-col px-6 py-4 space-y-3">
+                <a href="index.html">Home</a>
+                <a href="companies.html">Companies</a>
+                <a href="loans.html" class="underline font-semibold">Loans</a>
+                <a href="investment.html">Investments</a>
+                <a href="insurance.html">Insurance</a>
+                <a href="credit-cards.html">Cards</a>
+                <a href="savings.html">Savings</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
         </div>
     </header>
+
+    <!-- MAIN -->
+    <main class="pt-28 pb-16 px-6 max-w-5xl mx-auto">
+
+        <h2 class="text-3xl font-bold text-blue-700 text-center mb-6">
+            Loan Providers & Educational Guide
+        </h2>
+
+        <p class="text-center text-gray-600 mb-12">
+            Loans can help meet financial needs but involve risk and interest costs.
+            FinanceConnect provides information about reputable loan providers
+            and types of loans for educational purposes only. Always read terms
+            carefully and consult licensed financial advisors before borrowing.
+        </p>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h4 class="text-lg font-bold mb-2">Discover Personal Loan Options</h4>
+                <p class="text-gray-600 mb-4">
+                    Learn about personal loans, interest rates, and repayment terms.
+                </p>
+                <a href="https://www.bankofamerica.com/personal-loans/" target="_blank" class="text-blue-600 underline">
+                    Visit Official Page
+                </a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h4 class="text-lg font-bold mb-2">Credit Union Loan Programs</h4>
+                <p class="text-gray-600 mb-4">
+                    Explore credit unions offering small business, auto, and personal loans.
+                </p>
+                <a href="https://www.nacu.org/" target="_blank" class="text-blue-600 underline">
+                    Visit NACU Website
+                </a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h4 class="text-lg font-bold mb-2">Online Lending Platforms</h4>
+                <p class="text-gray-600 mb-4">
+                    Research online lenders with verified credentials for personal and business loans.
+                </p>
+                <a href="https://www.lendingtree.com/" target="_blank" class="text-blue-600 underline">
+                    Visit Official Website
+                </a>
+            </div>
+
+        </div>
+
+        <div class="mt-12 bg-white p-6 rounded-lg shadow-md leading-relaxed space-y-4">
+            <h3 class="text-xl font-bold text-blue-700">Responsible Borrowing Tips</h3>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Always check the annual percentage rate (APR) and fees.</li>
+                <li>Borrow only what you can repay on time.</li>
+                <li>Compare multiple lenders before making decisions.</li>
+                <li>Read all loan agreements and disclosures carefully.</li>
+                <li>Maintain a healthy credit score to access better terms.</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-700 text-white py-8 mt-10">
+        <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+            <p>© 2026 FinanceConnect. All rights reserved.</p>
+            <p class="text-sm">
+                FinanceConnect is an educational platform. We are not a lender.
+                Always consult licensed financial professionals before borrowing.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <a href="privacy-policy.html" class="underline hover:text-blue-200">Privacy Policy</a>
+                <a href="terms.html" class="underline hover:text-blue-200">Terms & Conditions</a>
+                <a href="contact.html" class="underline hover:text-blue-200">Contact</a>
+                <a href="about.html" class="underline hover:text-blue-200">About</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE MENU SCRIPT -->
     <script>
-        document.getElementById("menu-btn").addEventListener("click", function () {
-            document.getElementById("menu").classList.toggle("hidden");
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
         });
     </script>
 
-    <main class="pt-24 container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">Top Loan Providers</h2>
-
-        <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">QuickLoan Ltd</h3>
-                <p>Instant personal loans up to $5,000 with low interest.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">FastCash Finance</h3>
-                <p>Short-term loans with fast approval.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">SafeLend</h3>
-                <p>Secure loans with flexible repayment plans.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer class="bg-blue-700 text-white text-center py-6 mt-10">
-        <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
-    </footer>
 </body>
-
 </html>
+
