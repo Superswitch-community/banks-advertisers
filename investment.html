@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <title>Investment Platforms & Education | FinanceConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinanceConnect - Investments</title>
+    <meta name="description" content="Learn about investment platforms, brokerage firms, and long-term investing strategies. Educational information only.">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-blue-100 font-sans">
+<body class="bg-gray-100 font-sans text-gray-800">
 
-    <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto flex justify-between items-center p-4">
+    <!-- HEADER -->
+    <header class="bg-blue-700 text-white fixed w-full top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-xl font-bold">FinanceConnect</h1>
-            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-            <nav id="menu" class="hidden md:flex space-x-6">
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 font-medium">
                 <a href="index.html" class="hover:text-blue-200">Home</a>
                 <a href="companies.html" class="hover:text-blue-200">Companies</a>
                 <a href="loans.html" class="hover:text-blue-200">Loans</a>
-                <a href="investment.html" class="hover:text-blue-200">Investments</a>
+                <a href="investment.html" class="underline font-semibold">Investments</a>
                 <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
                 <a href="credit-cards.html" class="hover:text-blue-200">Cards</a>
                 <a href="savings.html" class="hover:text-blue-200">Savings</a>
@@ -26,36 +28,184 @@
                 <a href="contact.html" class="hover:text-blue-200">Contact</a>
                 <a href="about.html" class="hover:text-blue-200">About</a>
             </nav>
+
+            <!-- Mobile Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600">
+            <div class="flex flex-col px-6 py-4 space-y-3">
+                <a href="index.html">Home</a>
+                <a href="companies.html">Companies</a>
+                <a href="loans.html">Loans</a>
+                <a href="investment.html" class="underline font-semibold">Investments</a>
+                <a href="insurance.html">Insurance</a>
+                <a href="credit-cards.html">Cards</a>
+                <a href="savings.html">Savings</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
         </div>
     </header>
+
+    <!-- MAIN -->
+    <main class="pt-28 pb-16 px-6">
+
+        <div class="max-w-5xl mx-auto">
+
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-6">
+                Investment Platforms & Educational Resources
+            </h2>
+
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                Investing involves risk, including possible loss of principal.
+                This page provides educational information about well-known
+                brokerage platforms and investment firms.
+                FinanceConnect does not provide financial advice.
+            </p>
+
+            <!-- EDUCATIONAL SECTION -->
+            <div class="bg-white p-8 rounded-lg shadow-md mb-12 space-y-6 leading-relaxed">
+
+                <h3 class="text-xl font-semibold text-blue-700">Understanding Investment Options</h3>
+
+                <p>
+                    Common investment options include stocks, bonds, mutual funds,
+                    exchange-traded funds (ETFs), and retirement accounts.
+                    Each carries different levels of risk and potential return.
+                </p>
+
+                <p>
+                    Before investing, consider your financial goals, time horizon,
+                    and risk tolerance. Diversification and long-term strategies
+                    are commonly recommended principles in financial planning.
+                </p>
+
+                <p>
+                    Always review official disclosures and consult licensed financial
+                    professionals before making investment decisions.
+                </p>
+
+            </div>
+
+            <!-- PLATFORMS GRID -->
+            <h3 class="text-2xl font-bold text-blue-700 text-center mb-8">
+                Major Investment Platforms
+            </h3>
+
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-bold mb-2">Vanguard</h4>
+                    <p class="text-gray-600 mb-4">
+                        Offers low-cost index funds, ETFs, retirement accounts,
+                        and long-term investment solutions.
+                    </p>
+                    <a href="https://investor.vanguard.com" target="_blank"
+                       class="text-blue-600 underline">
+                        Visit Official Website
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-bold mb-2">Fidelity Investments</h4>
+                    <p class="text-gray-600 mb-4">
+                        Provides brokerage services, retirement accounts,
+                        research tools, and managed portfolios.
+                    </p>
+                    <a href="https://www.fidelity.com" target="_blank"
+                       class="text-blue-600 underline">
+                        Visit Official Website
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-bold mb-2">Charles Schwab</h4>
+                    <p class="text-gray-600 mb-4">
+                        Offers trading platforms, advisory services,
+                        and diversified investment products.
+                    </p>
+                    <a href="https://www.schwab.com" target="_blank"
+                       class="text-blue-600 underline">
+                        Visit Official Website
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-bold mb-2">TD Ameritrade</h4>
+                    <p class="text-gray-600 mb-4">
+                        Provides brokerage services and trading tools
+                        for individual investors.
+                    </p>
+                    <a href="https://www.tdameritrade.com" target="_blank"
+                       class="text-blue-600 underline">
+                        Visit Official Website
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-bold mb-2">E*TRADE</h4>
+                    <p class="text-gray-600 mb-4">
+                        Online brokerage platform offering stocks, ETFs,
+                        options trading, and retirement accounts.
+                    </p>
+                    <a href="https://us.etrade.com" target="_blank"
+                       class="text-blue-600 underline">
+                        Visit Official Website
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-bold mb-2">BlackRock</h4>
+                    <p class="text-gray-600 mb-4">
+                        Global investment management firm known for
+                        iShares ETFs and institutional asset management.
+                    </p>
+                    <a href="https://www.blackrock.com" target="_blank"
+                       class="text-blue-600 underline">
+                        Visit Official Website
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-700 text-white py-8 mt-10">
+        <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+
+            <p>© 2026 FinanceConnect. All rights reserved.</p>
+
+            <p class="text-sm">
+                FinanceConnect is an independent informational website and not a
+                broker, investment advisor, or financial institution.
+                All content is for educational purposes only.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <a href="privacy-policy.html" class="underline hover:text-blue-200">Privacy Policy</a>
+                <a href="terms.html" class="underline hover:text-blue-200">Terms & Conditions</a>
+                <a href="contact.html" class="underline hover:text-blue-200">Contact</a>
+                <a href="about.html" class="underline hover:text-blue-200">About</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- MOBILE MENU SCRIPT -->
     <script>
-        document.getElementById("menu-btn").addEventListener("click", function () {
-            document.getElementById("menu").classList.toggle("hidden");
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
         });
     </script>
 
-    <main class="pt-24 container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">Investment Platforms</h2>
-
-        <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">SafeInvest</h3>
-                <p>High yield investments with guaranteed safety.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">FutureWealth</h3>
-                <p>Retirement & long-term wealth building portfolios.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">InvestPlus</h3>
-                <p>Flexible investment options for beginners and experts.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer class="bg-blue-700 text-white text-center py-6 mt-10">
-        <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
-    </footer>
 </body>
-
 </html>
