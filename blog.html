@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <title>Finance Articles & Insights | FinanceConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinanceConnect - Blog</title>
+    <meta name="description" content="Read financial guides, loan comparisons, credit insights, and investment education articles on FinanceConnect.">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-blue-100 font-sans">
+<body class="bg-gray-100 font-sans text-gray-800">
 
-    <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto flex justify-between items-center p-4">
+    <!-- HEADER -->
+    <header class="bg-blue-700 text-white fixed w-full top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
             <h1 class="text-xl font-bold">FinanceConnect</h1>
-            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-            <nav id="menu" class="hidden md:flex space-x-6">
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 font-medium">
                 <a href="index.html" class="hover:text-blue-200">Home</a>
                 <a href="companies.html" class="hover:text-blue-200">Companies</a>
                 <a href="loans.html" class="hover:text-blue-200">Loans</a>
@@ -22,41 +25,164 @@
                 <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
                 <a href="credit-cards.html" class="hover:text-blue-200">Cards</a>
                 <a href="savings.html" class="hover:text-blue-200">Savings</a>
-                <a href="blog.html" class="hover:text-blue-200">Blog</a>
+                <a href="blog.html" class="underline font-semibold">Blog</a>
                 <a href="contact.html" class="hover:text-blue-200">Contact</a>
                 <a href="about.html" class="hover:text-blue-200">About</a>
             </nav>
+
+            <!-- Mobile Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600">
+            <div class="flex flex-col px-6 py-4 space-y-3">
+                <a href="index.html">Home</a>
+                <a href="companies.html">Companies</a>
+                <a href="loans.html">Loans</a>
+                <a href="investment.html">Investments</a>
+                <a href="insurance.html">Insurance</a>
+                <a href="credit-cards.html">Cards</a>
+                <a href="savings.html">Savings</a>
+                <a href="blog.html" class="underline font-semibold">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
         </div>
     </header>
 
+    <!-- MAIN -->
+    <main class="pt-28 pb-16 px-6">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-6">
+                Financial Articles & Educational Resources
+            </h2>
+
+            <p class="text-center max-w-3xl mx-auto mb-12 text-gray-600">
+                Explore in-depth financial guides, product comparisons, and educational content designed to help you
+                understand loans, credit cards, insurance, savings accounts, and investment opportunities.
+                All articles are created for informational purposes only.
+            </p>
+
+            <!-- BLOG GRID -->
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3">
+                        Top 5 Investment Strategies for Long-Term Growth
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Learn practical approaches to building wealth through diversified investments,
+                        risk management, and long-term financial planning.
+                    </p>
+                    <a href="#" class="text-blue-600 font-medium underline">
+                        Read Full Article →
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3">
+                        Understanding Credit Scores and How They Work
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Discover how credit scores are calculated, what affects your rating,
+                        and how to improve your financial profile responsibly.
+                    </p>
+                    <a href="#" class="text-blue-600 font-medium underline">
+                        Read Full Article →
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3">
+                        How to Choose the Right Personal Loan
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Compare interest rates, repayment terms, eligibility requirements,
+                        and common loan features before applying.
+                    </p>
+                    <a href="#" class="text-blue-600 font-medium underline">
+                        Read Full Article →
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3">
+                        Savings Accounts vs Investment Accounts
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Understand the key differences between saving and investing
+                        and which option aligns best with your financial goals.
+                    </p>
+                    <a href="#" class="text-blue-600 font-medium underline">
+                        Read Full Article →
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3">
+                        What to Know Before Applying for a Credit Card
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Explore fees, rewards programs, APR rates, and responsible
+                        credit card usage tips.
+                    </p>
+                    <a href="#" class="text-blue-600 font-medium underline">
+                        Read Full Article →
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3">
+                        Beginner’s Guide to Financial Planning
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        A step-by-step introduction to budgeting, saving,
+                        investing, and setting realistic financial goals.
+                    </p>
+                    <a href="#" class="text-blue-600 font-medium underline">
+                        Read Full Article →
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-700 text-white py-8 mt-10">
+        <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+
+            <p>© 2026 FinanceConnect. All rights reserved.</p>
+
+            <p class="text-sm">
+                FinanceConnect is an independent informational website and not a bank,
+                lender, or financial institution. Content is for educational purposes only.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <a href="privacy-policy.html" class="underline hover:text-blue-200">Privacy Policy</a>
+                <a href="terms.html" class="underline hover:text-blue-200">Terms & Conditions</a>
+                <a href="contact.html" class="underline hover:text-blue-200">Contact</a>
+                <a href="about.html" class="underline hover:text-blue-200">About</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- MOBILE MENU SCRIPT -->
     <script>
-        document.getElementById("menu-btn").addEventListener("click", function () {
-            document.getElementById("menu").classList.toggle("hidden");
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
         });
     </script>
 
-    <main class="pt-24 container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">Finance Articles & Tips</h2>
-
-        <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">Top 5 Investment Strategies in 2026</h3>
-                <p>Learn how to maximize returns with minimal risk.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">Understanding Credit Scores</h3>
-                <p>Everything you need to know about maintaining a healthy score.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">Choosing the Right Loan</h3>
-                <p>Compare interest rates, repayment plans, and benefits.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer class="bg-blue-700 text-white text-center py-6 mt-10">
-        <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
-    </footer>
 </body>
-
 </html>
