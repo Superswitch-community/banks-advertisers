@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinanceConnect - About</title>
+    <title>About Us | FinanceConnect</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-blue-100 font-sans">
+<body class="bg-gray-100 font-sans text-gray-800">
 
-    <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto flex justify-between items-center p-4">
+    <!-- HEADER -->
+    <header class="bg-blue-700 text-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <!-- Logo -->
             <h1 class="text-xl font-bold">FinanceConnect</h1>
-            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-            <nav id="menu" class="hidden md:flex space-x-6">
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6 font-medium">
                 <a href="index.html" class="hover:text-blue-200">Home</a>
                 <a href="companies.html" class="hover:text-blue-200">Companies</a>
                 <a href="loans.html" class="hover:text-blue-200">Loans</a>
@@ -24,32 +27,125 @@
                 <a href="savings.html" class="hover:text-blue-200">Savings</a>
                 <a href="blog.html" class="hover:text-blue-200">Blog</a>
                 <a href="contact.html" class="hover:text-blue-200">Contact</a>
-                <a href="about.html" class="hover:text-blue-200">About</a>
+                <a href="about.html" class="underline font-semibold">About</a>
             </nav>
+
+            <!-- Mobile Button -->
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600">
+            <div class="flex flex-col space-y-3 px-6 py-4">
+                <a href="index.html" class="hover:text-blue-200">Home</a>
+                <a href="companies.html" class="hover:text-blue-200">Companies</a>
+                <a href="loans.html" class="hover:text-blue-200">Loans</a>
+                <a href="investment.html" class="hover:text-blue-200">Investments</a>
+                <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
+                <a href="credit-cards.html" class="hover:text-blue-200">Cards</a>
+                <a href="savings.html" class="hover:text-blue-200">Savings</a>
+                <a href="blog.html" class="hover:text-blue-200">Blog</a>
+                <a href="contact.html" class="hover:text-blue-200">Contact</a>
+                <a href="about.html" class="font-semibold underline">About</a>
+            </div>
         </div>
     </header>
 
-    <script>
-        document.getElementById("menu-btn").addEventListener("click", function () {
-            document.getElementById("menu").classList.toggle("hidden");
-        });
-    </script>
+    <!-- MAIN CONTENT -->
+    <main class="pt-28 pb-16 px-6">
+        <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-10">
 
-    <main class="pt-24 container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">About FinanceConnect</h2>
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">
+                About FinanceConnect
+            </h2>
 
-        <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
-            <p class="mb-4">FinanceConnect is a platform dedicated to promoting and advertising trusted financial
-                companies, products, and services. Our goal is to help users compare loans, investments, insurance, and
-                other financial products in one place.</p>
-            <p>We work with verified partners to ensure accurate and up-to-date information, making it easy for visitors
-                to make informed financial decisions.</p>
+            <div class="space-y-6 leading-relaxed">
+
+                <p>
+                    <strong>FinanceConnect</strong> is an independent financial information platform designed to help
+                    individuals compare financial products and understand their options before making important financial decisions.
+                </p>
+
+                <p>
+                    We provide educational content, comparison guides, and industry insights across loans, savings accounts,
+                    credit cards, insurance products, and investment services.
+                </p>
+
+                <h3 class="text-xl font-semibold text-blue-700">Our Mission</h3>
+                <p>
+                    Our mission is to simplify financial decision-making by presenting clear, well-structured, and transparent
+                    information. We aim to empower readers with knowledge, not influence them with misleading promises.
+                </p>
+
+                <h3 class="text-xl font-semibold text-blue-700">Editorial Independence</h3>
+                <p>
+                    All content published on FinanceConnect is created for informational and educational purposes only.
+                    We do not provide financial, legal, or professional investment advice.
+                </p>
+
+                <p>
+                    Visitors are encouraged to verify product details directly with the official provider before applying
+                    for any financial product.
+                </p>
+
+                <h3 class="text-xl font-semibold text-blue-700">Advertising & Affiliate Disclosure</h3>
+                <p>
+                    FinanceConnect may earn compensation from third-party partners when users click on links or apply
+                    for certain products. This helps support the maintenance and operation of our website.
+                </p>
+
+                <p>
+                    However, compensation does not influence our editorial content, product evaluations, or rankings.
+                    We strive to provide fair and balanced information.
+                </p>
+
+                <h3 class="text-xl font-semibold text-blue-700">Transparency</h3>
+                <p>
+                    Financial offers, rates, and terms may change without notice. While we aim to keep our information
+                    up to date, we cannot guarantee complete accuracy at all times.
+                </p>
+
+                <h3 class="text-xl font-semibold text-blue-700">Contact Information</h3>
+                <p>
+                    For inquiries, corrections, or feedback, please visit our 
+                    <a href="contact.html" class="text-blue-600 underline">Contact Page</a>.
+                </p>
+
+            </div>
         </div>
     </main>
 
-    <footer class="bg-blue-700 text-white text-center py-6 mt-10">
-        <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
-    </footer>
-</body>
+    <!-- FOOTER -->
+    <footer class="bg-blue-700 text-white py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
 
+            <p>© 2026 FinanceConnect. All rights reserved.</p>
+
+            <p class="text-sm">
+                FinanceConnect is an independent informational website and not a bank, lender, or financial institution.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <a href="privacy-policy.html" class="underline hover:text-blue-200">Privacy Policy</a>
+                <a href="terms.html" class="underline hover:text-blue-200">Terms & Conditions</a>
+                <a href="contact.html" class="underline hover:text-blue-200">Contact</a>
+                <a href="about.html" class="underline hover:text-blue-200">About</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- MOBILE SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
 </html>
