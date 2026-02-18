@@ -1,61 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <title>Insurance Guides & Providers | FinanceConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinanceConnect - Insurance</title>
+    <meta name="description" content="Learn about different types of insurance including life, health, auto, and property coverage. Compare major insurance providers for educational purposes.">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-blue-100 font-sans">
+<body class="bg-gray-100 font-sans text-gray-800">
 
-    <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto flex justify-between items-center p-4">
+    <!-- HEADER -->
+    <header class="bg-blue-700 text-white fixed w-full top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-xl font-bold">FinanceConnect</h1>
-            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-            <nav id="menu" class="hidden md:flex space-x-6">
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 font-medium">
                 <a href="index.html" class="hover:text-blue-200">Home</a>
                 <a href="companies.html" class="hover:text-blue-200">Companies</a>
                 <a href="loans.html" class="hover:text-blue-200">Loans</a>
                 <a href="investment.html" class="hover:text-blue-200">Investments</a>
-                <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
+                <a href="insurance.html" class="underline font-semibold">Insurance</a>
                 <a href="credit-cards.html" class="hover:text-blue-200">Cards</a>
                 <a href="savings.html" class="hover:text-blue-200">Savings</a>
                 <a href="blog.html" class="hover:text-blue-200">Blog</a>
                 <a href="contact.html" class="hover:text-blue-200">Contact</a>
                 <a href="about.html" class="hover:text-blue-200">About</a>
             </nav>
+
+            <!-- Mobile Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600">
+            <div class="flex flex-col px-6 py-4 space-y-3">
+                <a href="index.html">Home</a>
+                <a href="companies.html">Companies</a>
+                <a href="loans.html">Loans</a>
+                <a href="investment.html">Investments</a>
+                <a href="insurance.html" class="underline font-semibold">Insurance</a>
+                <a href="credit-cards.html">Cards</a>
+                <a href="savings.html">Savings</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
         </div>
     </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-28 pb-16 px-6">
+
+        <div class="max-w-5xl mx-auto">
+
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-6">
+                Insurance Education & Provider Overview
+            </h2>
+
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                Insurance plays a critical role in financial planning. This page provides
+                educational information about different types of insurance coverage and
+                highlights well-known insurance providers for comparison purposes.
+            </p>
+
+            <!-- EDUCATIONAL SECTION -->
+            <div class="bg-white p-8 rounded-lg shadow-md mb-12 space-y-6 leading-relaxed">
+
+                <h3 class="text-xl font-semibold text-blue-700">Types of Insurance</h3>
+
+                <p>
+                    <strong>Life Insurance:</strong> Provides financial support to beneficiaries
+                    in the event of the policyholder’s death. Policies may include term life or permanent coverage.
+                </p>
+
+                <p>
+                    <strong>Health Insurance:</strong> Helps cover medical expenses such as hospital visits,
+                    prescriptions, and preventive care services.
+                </p>
+
+                <p>
+                    <strong>Auto Insurance:</strong> Covers vehicle-related damages, liability claims,
+                    and other risks associated with driving.
+                </p>
+
+                <p>
+                    <strong>Homeowners Insurance:</strong> Protects property against damage,
+                    theft, and certain natural disasters depending on policy terms.
+                </p>
+
+                <p>
+                    Coverage options, deductibles, and premiums vary by provider and individual circumstances.
+                    Always review official policy documents before purchasing insurance.
+                </p>
+
+            </div>
+
+            <!-- PROVIDERS GRID -->
+            <h3 class="text-2xl font-bold text-blue-700 text-center mb-8">
+                Major Insurance Providers
+            </h3>
+
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-bold mb-2">State Farm</h4>
+                    <p class="text-gray-600">
+                        Offers auto, home, renters, and life insurance products across
+                        multiple regions.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-bold mb-2">Allstate</h4>
+                    <p class="text-gray-600">
+                        Provides a range of insurance solutions including auto,
+                        property, and personal coverage plans.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-bold mb-2">GEICO</h4>
+                    <p class="text-gray-600">
+                        Known for auto insurance offerings and online policy management tools.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-bold mb-2">Progressive</h4>
+                    <p class="text-gray-600">
+                        Offers auto, motorcycle, home, and specialty insurance coverage.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-bold mb-2">MetLife</h4>
+                    <p class="text-gray-600">
+                        Provides life insurance, employee benefits, and financial protection products.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-bold mb-2">Prudential</h4>
+                    <p class="text-gray-600">
+                        Offers life insurance and long-term financial planning products.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-700 text-white py-8 mt-10">
+        <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+
+            <p>© 2026 FinanceConnect. All rights reserved.</p>
+
+            <p class="text-sm">
+                FinanceConnect is an independent informational website and not an insurance provider,
+                broker, or licensed financial advisor. Content is for educational purposes only.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <a href="privacy-policy.html" class="underline hover:text-blue-200">Privacy Policy</a>
+                <a href="terms.html" class="underline hover:text-blue-200">Terms & Conditions</a>
+                <a href="contact.html" class="underline hover:text-blue-200">Contact</a>
+                <a href="about.html" class="underline hover:text-blue-200">About</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- MOBILE MENU SCRIPT -->
     <script>
-        document.getElementById("menu-btn").addEventListener("click", function () {
-            document.getElementById("menu").classList.toggle("hidden");
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
         });
     </script>
 
-    <main class="pt-24 container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">Insurance Providers</h2>
-
-        <div class="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">SecureInsure</h3>
-                <p>Life, health, and property insurance solutions.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">SafeGuard Insurance</h3>
-                <p>Affordable plans for individuals and families.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">Global Insurance</h3>
-                <p>Comprehensive business and commercial coverage.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer class="bg-blue-700 text-white text-center py-6 mt-10">
-        <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
-    </footer>
 </body>
-
 </html>
