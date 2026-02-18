@@ -10,51 +10,97 @@
 
 <body class="bg-blue-100 font-sans">
 
+    <!-- HEADER -->
     <header class="bg-blue-700 text-white shadow-md fixed w-full z-50">
         <div class="container mx-auto flex justify-between items-center p-4">
             <h1 class="text-xl font-bold">FinanceConnect</h1>
-            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-            <nav id="menu" class="hidden md:flex space-x-6">
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 font-medium">
                 <a href="index.html" class="hover:text-blue-200">Home</a>
                 <a href="companies.html" class="hover:text-blue-200">Companies</a>
                 <a href="loans.html" class="hover:text-blue-200">Loans</a>
                 <a href="investment.html" class="hover:text-blue-200">Investments</a>
                 <a href="insurance.html" class="hover:text-blue-200">Insurance</a>
-                <a href="credit-cards.html" class="hover:text-blue-200">Cards</a>
-                <a href="savings.html" class="hover:text-blue-200">Savings</a>
                 <a href="blog.html" class="hover:text-blue-200">Blog</a>
-                <a href="contact.html" class="hover:text-blue-200">Contact</a>
+                <a href="contact.html" class="underline font-semibold">Contact</a>
                 <a href="about.html" class="hover:text-blue-200">About</a>
             </nav>
+
+            <!-- Mobile Hamburger -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600">
+            <div class="flex flex-col px-6 py-4 space-y-3">
+                <a href="index.html">Home</a>
+                <a href="companies.html">Companies</a>
+                <a href="loans.html">Loans</a>
+                <a href="investment.html">Investments</a>
+                <a href="insurance.html">Insurance</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" class="underline font-semibold">Contact</a>
+                <a href="about.html">About</a>
+            </div>
         </div>
     </header>
 
     <script>
-        document.getElementById("menu-btn").addEventListener("click", function () {
-            document.getElementById("menu").classList.toggle("hidden");
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
         });
     </script>
 
-    <main class="pt-24 container mx-auto px-6 py-16">
+    <!-- MAIN -->
+    <main class="pt-28 container mx-auto px-6 py-16">
+
         <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">Contact Us</h2>
 
-        <form class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md grid gap-6">
-            <input type="text" placeholder="Full Name"
-                class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
-            <input type="email" placeholder="Email Address"
-                class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
-            <input type="tel" placeholder="Phone Number"
-                class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
-            <textarea placeholder="Your Message" rows="5"
-                class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"></textarea>
-            <button class="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition font-semibold">Send
-                Message</button>
-        </form>
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md grid gap-6">
+
+            <p class="text-gray-700 text-center">
+                Need to reach us? You can contact us via email or WhatsApp. We aim to respond within 24 hours.
+            </p>
+
+            <!-- Email Link -->
+            <a href="mailto:your-email@example.com"
+                class="block text-center bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition font-semibold">
+                Email Us
+            </a>
+
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/1234567890"
+                class="block text-center bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-500 transition font-semibold">
+                Chat on WhatsApp
+            </a>
+
+            <!-- Optional Contact Form (simple) -->
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="grid gap-4">
+                <input type="text" name="Name" placeholder="Full Name"
+                    class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+                <input type="email" name="Email" placeholder="Email Address"
+                    class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+                <textarea name="Message" placeholder="Your Message" rows="5"
+                    class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"></textarea>
+                <button type="submit"
+                    class="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition font-semibold">
+                    Send Message
+                </button>
+            </form>
+
+        </div>
+
     </main>
 
+    <!-- FOOTER -->
     <footer class="bg-blue-700 text-white text-center py-6 mt-10">
         <p>© 2026 FinanceConnect. We advertise third-party financial services.</p>
     </footer>
+
 </body>
 
 </html>
