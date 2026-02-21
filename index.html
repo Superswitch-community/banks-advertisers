@@ -15,7 +15,7 @@
 
     <meta name="google-adsense-account" content="ca-pub-1496447698823052">
 
-    <!-- Structured trust signal (invisible to users) -->
+    <!-- Structured E-A-T Signals -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -28,6 +28,38 @@
         "@type": "Organization",
         "name": "FinanceConnect"
       }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "How to Improve Your Credit Score Fast",
+          "author": {
+            "@type": "Person",
+            "name": "FinanceConnect Editorial Team"
+          },
+          "datePublished": "2026-02-21",
+          "dateModified": "2026-02-21",
+          "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+          "mainEntityOfPage": "https://bankadvertisers.site/"
+        },
+        {
+          "@type": "Article",
+          "headline": "Top Personal Loan Options in 2026",
+          "author": {
+            "@type": "Person",
+            "name": "FinanceConnect Editorial Team"
+          },
+          "datePublished": "2026-02-21",
+          "dateModified": "2026-02-21",
+          "image": "https://images.unsplash.com/photo-1567427018141-0584cfcbf1a3",
+          "mainEntityOfPage": "https://bankadvertisers.site/"
+        }
+      ]
     }
     </script>
 
@@ -205,7 +237,8 @@
     </main>
 
     <!-- MODAL -->
-    <div id="modalContainer" class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50">
+    <div id="modalContainer"
+        class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50">
         <div class="bg-white max-w-4xl w-full rounded-lg p-8 overflow-y-auto max-h-[90vh] modal-scroll relative">
             <button onclick="closeModal()" class="absolute top-4 right-4 text-2xl">×</button>
             <div id="modalContent"></div>
@@ -215,7 +248,8 @@
     <script>
         const articles = {
             homeArticle1: `
-                <h1 class="text-3xl font-bold mb-4 text-blue-700">How to Improve Your Credit Score Fast</h1>
+                <h1 class="text-3xl font-bold mb-2 text-blue-700">How to Improve Your Credit Score Fast</h1>
+                <p class="text-sm text-gray-500 mb-4">Published on: February 21, 2026 | Author: FinanceConnect Editorial Team</p>
                 <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" class="w-full rounded mb-6" alt="Credit score improvement">
                 <p>Your credit score is a crucial number in your financial life. High scores unlock better credit cards, loans, and interest rates. Follow these steps to improve it quickly:</p>
                 <h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">1. Pay Bills On Time</h2>
@@ -227,7 +261,8 @@
                 <p>Consistency and monitoring are key. Over months, these habits significantly improve your credit profile.</p>
             `,
             homeArticle2: `
-                <h1 class="text-3xl font-bold mb-4 text-blue-700">Top Personal Loan Options in 2026</h1>
+                <h1 class="text-3xl font-bold mb-2 text-blue-700">Top Personal Loan Options in 2026</h1>
+                <p class="text-sm text-gray-500 mb-4">Published on: February 21, 2026 | Author: FinanceConnect Editorial Team</p>
                 <img src="https://images.unsplash.com/photo-1567427018141-0584cfcbf1a3" class="w-full rounded mb-6" alt="Personal loan options">
                 <p>Personal loans are ideal for debt consolidation, emergency expenses, or major purchases. Compare lenders to find the best fit.</p>
                 <h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">1. Compare Interest Rates</h2>
