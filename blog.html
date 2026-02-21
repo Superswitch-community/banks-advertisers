@@ -7,49 +7,98 @@
 <meta name="description" content="Read financial guides, loan comparisons, credit insights, and investment education articles on FinanceConnect.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://bankadvertisers.site/blog.html">
-
 <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
 <body class="bg-gray-100 font-sans text-gray-800">
 
 <!-- HEADER -->
 <header class="bg-blue-700 text-white fixed w-full top-0 z-50 shadow-md">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold">FinanceConnect</h1>
-        <nav class="hidden md:flex space-x-6 font-medium">
-            <a href="index.html">Home</a>
-            <a href="blog.html" class="underline font-semibold">Blog</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-        </nav>
-    </div>
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<h1 class="text-xl font-bold">FinanceConnect</h1>
+
+<!-- Desktop Nav -->
+<nav class="hidden md:flex space-x-6 font-medium">
+<a href="index.html">Home</a>
+<a href="companies.html">Companies</a>
+<a href="loans.html">Loans</a>
+<a href="investment.html">Investments</a>
+<a href="insurance.html">Insurance</a>
+<a href="credit-cards.html">Cards</a>
+<a href="savings.html">Savings</a>
+<a href="blog.html" class="underline font-semibold">Blog</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+</nav>
+
+<!-- Mobile Menu Button -->
+<button id="menu-btn" class="md:hidden text-2xl">☰</button>
+
+</div>
+
+<!-- Mobile Nav -->
+<div id="mobile-menu" class="hidden md:hidden bg-blue-600">
+<div class="flex flex-col px-6 py-4 space-y-3">
+<a href="index.html">Home</a>
+<a href="companies.html">Companies</a>
+<a href="loans.html">Loans</a>
+<a href="investment.html">Investments</a>
+<a href="insurance.html">Insurance</a>
+<a href="credit-cards.html">Cards</a>
+<a href="savings.html">Savings</a>
+<a href="blog.html" class="underline font-semibold">Blog</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+</div>
+</div>
 </header>
 
 <!-- MAIN -->
 <main class="pt-28 pb-16 px-6">
-
 <div class="max-w-6xl mx-auto">
 
 <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">
 Financial Articles & Educational Resources
 </h2>
 
-<!-- BLOG CARD -->
-<div class="grid md:grid-cols-2 gap-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+<!-- ARTICLE 1 -->
+<div class="bg-white p-6 rounded-lg shadow-md">
 <h3 class="text-xl font-bold mb-3">
-Top 5 Investment Strategies for Long-Term Growth
+Top 5 Investment Strategies
 </h3>
-
 <p class="text-gray-600 mb-4">
-Learn practical approaches to building wealth through diversified investments,
-risk management, and long-term financial planning.
+Learn structured methods for long-term portfolio growth.
 </p>
+<button onclick="openArticle('investment')" class="text-blue-600 underline">
+Read Full Article →
+</button>
+</div>
 
-<button onclick="openModal()" class="text-blue-600 font-medium underline">
+<!-- ARTICLE 2 -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-bold mb-3">
+Understanding Credit Scores
+</h3>
+<p class="text-gray-600 mb-4">
+How credit scores are calculated and how to improve yours.
+</p>
+<button onclick="openArticle('credit')" class="text-blue-600 underline">
+Read Full Article →
+</button>
+</div>
+
+<!-- ARTICLE 3 -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-bold mb-3">
+How to Choose the Right Personal Loan
+</h3>
+<p class="text-gray-600 mb-4">
+Compare rates, terms, and eligibility factors before applying.
+</p>
+<button onclick="openArticle('loan')" class="text-blue-600 underline">
 Read Full Article →
 </button>
 </div>
@@ -58,127 +107,13 @@ Read Full Article →
 </div>
 </main>
 
-<!-- ARTICLE MODAL -->
+<!-- MODAL -->
 <div id="articleModal" class="fixed inset-0 bg-black bg-opacity-60 hidden overflow-y-auto">
+<div class="bg-white max-w-4xl mx-auto mt-20 mb-20 p-8 rounded-lg relative">
 
-<div class="bg-white max-w-4xl mx-auto mt-20 mb-20 p-8 rounded-lg shadow-lg relative">
+<button onclick="closeModal()" class="absolute top-4 right-4 text-2xl font-bold">×</button>
 
-<button onclick="closeModal()" class="absolute top-4 right-4 text-2xl font-bold text-gray-600">
-×
-</button>
-
-<article>
-
-<h1 class="text-3xl font-bold text-blue-700 mb-4">
-Top 5 Investment Strategies for Long-Term Growth
-</h1>
-
-<p class="text-sm text-gray-500 mb-6">
-Published on: February 21, 2026 | Author: FinanceConnect Editorial Team
-</p>
-
-<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
-alt="Investment growth strategy financial chart"
-class="w-full rounded-lg mb-6">
-
-<p class="mb-4">
-Long-term investing is one of the most reliable ways to build wealth over time.
-Rather than focusing on short-term market fluctuations, successful investors
-adopt disciplined strategies designed for sustainable growth.
-</p>
-
-<h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">
-1. Diversified Portfolio Investing
-</h2>
-
-<p class="mb-4">
-Diversification involves spreading your investments across multiple asset
-classes such as stocks, bonds, and funds. This reduces overall risk because
-losses in one area may be balanced by gains in another.
-</p>
-
-<p class="mb-4">
-A well-diversified portfolio may include large-cap stocks, growth stocks,
-government bonds, and index funds.
-</p>
-
-<h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">
-2. Dollar-Cost Averaging
-</h2>
-
-<p class="mb-4">
-Dollar-cost averaging means investing a fixed amount regularly regardless
-of market conditions. This helps reduce emotional decisions and lowers
-the risk of investing all funds at a market peak.
-</p>
-
-<p class="mb-4">
-Consistency is often more important than timing.
-</p>
-
-<h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">
-3. Index Fund Investing
-</h2>
-
-<p class="mb-4">
-Index funds track major market indices and provide automatic diversification
-with lower management fees. They are widely used for long-term growth.
-</p>
-
-<h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">
-4. Dividend Reinvestment
-</h2>
-
-<p class="mb-4">
-Dividend-paying companies distribute profits to shareholders. Reinvesting
-those dividends allows compounding to accelerate wealth building.
-</p>
-
-<h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">
-5. Regular Portfolio Rebalancing
-</h2>
-
-<p class="mb-4">
-Over time, asset values change. Rebalancing ensures your investments remain
-aligned with your risk tolerance and financial goals.
-</p>
-
-<h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">
-Why Long-Term Investing Matters
-</h2>
-
-<p class="mb-4">
-Markets may fluctuate in the short term, but historically they trend upward
-over longer periods. Patience and discipline are key drivers of financial success.
-</p>
-
-<h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">
-Common Mistakes to Avoid
-</h2>
-
-<ul class="list-disc ml-6 mb-6">
-<li>Trying to time the market</li>
-<li>Ignoring diversification</li>
-<li>Investing without research</li>
-<li>Reacting emotionally to volatility</li>
-</ul>
-
-<h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">
-Final Thoughts
-</h2>
-
-<p class="mb-6">
-Building wealth takes time, patience, and strategy. By following structured
-investment principles and reviewing your goals regularly, you can work toward
-sustainable financial growth.
-</p>
-
-<div class="bg-gray-100 p-4 rounded-lg text-sm text-gray-600">
-Disclaimer: This article is for educational purposes only and does not
-constitute financial advice.
-</div>
-
-</article>
+<div id="modalContent"></div>
 
 </div>
 </div>
@@ -189,8 +124,68 @@ constitute financial advice.
 </footer>
 
 <script>
-function openModal() {
-document.getElementById("articleModal").classList.remove("hidden");
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+mobileMenu.classList.toggle("hidden");
+});
+
+function openArticle(type) {
+const modal = document.getElementById("articleModal");
+const content = document.getElementById("modalContent");
+
+if (type === "investment") {
+content.innerHTML = `
+<h1 class="text-3xl font-bold text-blue-700 mb-4">
+Top 5 Investment Strategies for Long-Term Growth
+</h1>
+<p class="mb-4">
+Long-term investing focuses on disciplined asset allocation,
+diversification, and consistency rather than short-term speculation.
+Investors often use index funds, dividend reinvestment, and strategic
+rebalancing to build sustainable wealth.
+</p>
+<p class="mb-4">
+Diversification spreads risk across multiple asset classes,
+reducing volatility impact on portfolios.
+</p>
+`;
+}
+
+if (type === "credit") {
+content.innerHTML = `
+<h1 class="text-3xl font-bold text-blue-700 mb-4">
+Understanding Credit Scores and How They Work
+</h1>
+<p class="mb-4">
+Credit scores measure your financial reliability based on payment history,
+credit utilization, account age, and credit mix.
+</p>
+<p class="mb-4">
+Improving your score involves consistent on-time payments,
+maintaining low balances, and avoiding unnecessary credit inquiries.
+</p>
+`;
+}
+
+if (type === "loan") {
+content.innerHTML = `
+<h1 class="text-3xl font-bold text-blue-700 mb-4">
+How to Choose the Right Personal Loan
+</h1>
+<p class="mb-4">
+When selecting a loan, compare interest rates, repayment terms,
+fees, and lender reputation.
+</p>
+<p class="mb-4">
+Understanding APR and total repayment cost helps avoid long-term
+financial strain.
+</p>
+`;
+}
+
+modal.classList.remove("hidden");
 }
 
 function closeModal() {
