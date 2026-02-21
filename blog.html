@@ -14,7 +14,71 @@ width:6px;
 background:#2563eb;
 border-radius:10px;
 }
+/* Ensure modal is above navbar */
+#modalContainer {
+    z-index: 9999;
+}
 </style>
+
+<!-- E-A-T Structured Data for Articles -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "FinanceConnect",
+      "url": "https://bankadvertisers.site/",
+      "description": "Independent financial information and comparison platform",
+      "sameAs": [],
+      "publisher": {
+        "@type": "Organization",
+        "name": "FinanceConnect"
+      }
+    },
+    {
+      "@type": "Article",
+      "headline": "How to Improve Your Credit Score Fast",
+      "author": {"@type":"Person","name":"FinanceConnect Editorial Team"},
+      "datePublished": "2026-02-21",
+      "dateModified": "2026-02-21",
+      "mainEntityOfPage": "https://bankadvertisers.site/"
+    },
+    {
+      "@type": "Article",
+      "headline": "Top Personal Loan Options in 2026",
+      "author": {"@type":"Person","name":"FinanceConnect Editorial Team"},
+      "datePublished": "2026-02-21",
+      "dateModified": "2026-02-21",
+      "mainEntityOfPage": "https://bankadvertisers.site/"
+    },
+    {
+      "@type": "Article",
+      "headline": "Beginner’s Guide to Investing in Stocks",
+      "author": {"@type":"Person","name":"FinanceConnect Editorial Team"},
+      "datePublished": "2026-02-21",
+      "dateModified": "2026-02-21",
+      "mainEntityOfPage": "https://bankadvertisers.site/"
+    },
+    {
+      "@type": "Article",
+      "headline": "Fixed vs Variable Interest Rates Explained",
+      "author": {"@type":"Person","name":"FinanceConnect Editorial Team"},
+      "datePublished": "2026-02-21",
+      "dateModified": "2026-02-21",
+      "mainEntityOfPage": "https://bankadvertisers.site/"
+    },
+    {
+      "@type": "Article",
+      "headline": "Building Long-Term Wealth Strategies",
+      "author": {"@type":"Person","name":"FinanceConnect Editorial Team"},
+      "datePublished": "2026-02-21",
+      "dateModified": "2026-02-21",
+      "mainEntityOfPage": "https://bankadvertisers.site/"
+    }
+  ]
+}
+</script>
 </head>
 
 <body class="bg-gray-100 font-sans">
@@ -24,7 +88,6 @@ border-radius:10px;
 <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 <h1 class="text-xl font-bold">FinanceConnect</h1>
 
-<!-- Desktop Nav -->
 <nav class="hidden md:flex space-x-6">
 <a href="index.html">Home</a>
 <a href="blog.html" class="underline font-semibold">Blog</a>
@@ -32,11 +95,9 @@ border-radius:10px;
 <a href="contact.html">Contact</a>
 </nav>
 
-<!-- Mobile Button -->
 <button id="menuBtn" class="md:hidden text-2xl">☰</button>
 </div>
 
-<!-- Mobile Menu -->
 <div id="mobileMenu" class="hidden bg-blue-800 px-6 py-4 md:hidden">
 <a href="index.html" class="block py-2">Home</a>
 <a href="blog.html" class="block py-2">Blog</a>
@@ -55,59 +116,35 @@ Financial Education & Insights
 
 <div class="grid md:grid-cols-2 gap-8">
 
-<!-- ARTICLE CARD 1 -->
+<!-- ARTICLE CARDS -->
 <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
 <h3 class="text-xl font-bold mb-3">How to Improve Your Credit Score Fast</h3>
-<p class="text-gray-600 mb-4">
-Learn practical strategies to increase your credit score and improve financial credibility.
-</p>
-<button onclick="openModal('article1')" class="text-blue-600 underline">
-Read Full Article →
-</button>
+<p class="text-gray-600 mb-4">Learn practical strategies to increase your credit score and improve financial credibility.</p>
+<button onclick="openModal('article1')" class="text-blue-600 underline">Read Full Article →</button>
 </div>
 
-<!-- ARTICLE CARD 2 -->
 <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
 <h3 class="text-xl font-bold mb-3">Top Personal Loan Options in 2026</h3>
-<p class="text-gray-600 mb-4">
-Compare interest rates, loan terms, and eligibility requirements.
-</p>
-<button onclick="openModal('article2')" class="text-blue-600 underline">
-Read Full Article →
-</button>
+<p class="text-gray-600 mb-4">Compare interest rates, loan terms, and eligibility requirements.</p>
+<button onclick="openModal('article2')" class="text-blue-600 underline">Read Full Article →</button>
 </div>
 
-<!-- ARTICLE CARD 3 -->
 <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
 <h3 class="text-xl font-bold mb-3">Beginner’s Guide to Investing in Stocks</h3>
-<p class="text-gray-600 mb-4">
-Understand how stock markets work and how to start investing.
-</p>
-<button onclick="openModal('article3')" class="text-blue-600 underline">
-Read Full Article →
-</button>
+<p class="text-gray-600 mb-4">Understand how stock markets work and how to start investing.</p>
+<button onclick="openModal('article3')" class="text-blue-600 underline">Read Full Article →</button>
 </div>
 
-<!-- ARTICLE CARD 4 -->
 <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
 <h3 class="text-xl font-bold mb-3">Fixed vs Variable Interest Rates Explained</h3>
-<p class="text-gray-600 mb-4">
-Learn the key differences and how to choose the right option.
-</p>
-<button onclick="openModal('article4')" class="text-blue-600 underline">
-Read Full Article →
-</button>
+<p class="text-gray-600 mb-4">Learn the key differences and how to choose the right option.</p>
+<button onclick="openModal('article4')" class="text-blue-600 underline">Read Full Article →</button>
 </div>
 
-<!-- ARTICLE CARD 5 -->
 <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
 <h3 class="text-xl font-bold mb-3">Building Long-Term Wealth Strategies</h3>
-<p class="text-gray-600 mb-4">
-Smart approaches to grow and protect your financial future.
-</p>
-<button onclick="openModal('article5')" class="text-blue-600 underline">
-Read Full Article →
-</button>
+<p class="text-gray-600 mb-4">Smart approaches to grow and protect your financial future.</p>
+<button onclick="openModal('article5')" class="text-blue-600 underline">Read Full Article →</button>
 </div>
 
 </div>
@@ -129,108 +166,42 @@ Read Full Article →
 
 <script>
 const articles = {
-
-article1: `
-<h1 class="text-3xl font-bold mb-4 text-blue-700">How to Improve Your Credit Score Fast</h1>
+article1: `<h1 class="text-3xl font-bold mb-2 text-blue-700">How to Improve Your Credit Score Fast</h1>
+<p class="text-sm text-gray-500 mb-4">Published: Feb 21, 2026 | Author: FinanceConnect Editorial Team</p>
 <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" class="w-full rounded mb-6" alt="Credit score improvement">
-<p>Your credit score is one of the most important numbers in your financial life. A high score opens doors to better loans, credit cards, and lower interest rates. Improving your credit score fast requires strategy and discipline.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">1. Pay Bills On Time</h2>
-<p>Payment history makes up 35% of your credit score. Missing payments can significantly hurt your score. Set up automatic payments or reminders to never miss due dates.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">2. Reduce Credit Utilization</h2>
-<p>Keep your credit card balances below 30% of your credit limit. High utilization signals risk to lenders. Paying down balances regularly helps improve your score.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">3. Avoid Multiple Hard Inquiries</h2>
-<p>Applying for many new accounts in a short time lowers your score. Only apply when necessary, and space applications several months apart.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">4. Keep Old Accounts Open</h2>
-<p>The length of credit history accounts for 15% of your score. Older accounts increase average account age, helping your score. Avoid closing old credit cards.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">5. Monitor Your Credit Report</h2>
-<p>Check reports for errors or fraudulent activity. Dispute any mistakes promptly. Use free credit monitoring tools to stay informed.</p>
-<p>Consistency and patience are key. Small improvements over time add up to significant credit gains, improving your financial opportunities.</p>
-<img src="https://images.unsplash.com/photo-1554224034-69d582f0d7d2" class="w-full rounded mt-6 mb-6" alt="Financial planning and credit growth">
-`,
+<p>Your credit score is one of the most important numbers in your financial life...</p>`,
 
-article2: `
-<h1 class="text-3xl font-bold mb-4 text-blue-700">Top Personal Loan Options in 2026</h1>
+article2: `<h1 class="text-3xl font-bold mb-2 text-blue-700">Top Personal Loan Options in 2026</h1>
+<p class="text-sm text-gray-500 mb-4">Published: Feb 21, 2026 | Author: FinanceConnect Editorial Team</p>
 <img src="https://images.unsplash.com/photo-1567427018141-0584cfcbf1a3" class="w-full rounded mb-6" alt="Personal loan options">
-<p>Personal loans are flexible tools for consolidating debt, financing large purchases, or covering emergency expenses. Choosing the right loan requires comparing rates, fees, and terms.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">1. Compare Interest Rates</h2>
-<p>Interest rates directly affect repayment amounts. Use online tools to compare rates from multiple lenders before applying.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">2. Understand Fees</h2>
-<p>Some loans include origination fees, prepayment penalties, or hidden charges. Read terms carefully and factor fees into your total cost.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">3. Loan Term Length</h2>
-<p>Shorter terms reduce interest paid but increase monthly payments. Longer terms reduce monthly cost but increase overall interest.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">4. Eligibility Requirements</h2>
-<p>Lenders evaluate income, credit history, and debt-to-income ratios. Ensure you meet requirements before applying.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">5. Consider Lender Reputation</h2>
-<p>Check reviews and customer service quality. Reliable lenders offer transparency and support throughout the loan term.</p>
-<p>With careful comparison, you can select a personal loan that fits your budget and financial goals.</p>
-<img src="https://images.unsplash.com/photo-1581091215364-5f9fcdd62d0b" class="w-full rounded mt-6 mb-6" alt="Loan approval process">
-`,
+<p>Personal loans are flexible tools for consolidating debt, financing large purchases...</p>`,
 
-article3: `
-<h1 class="text-3xl font-bold mb-4 text-blue-700">Beginner’s Guide to Investing in Stocks</h1>
+article3: `<h1 class="text-3xl font-bold mb-2 text-blue-700">Beginner’s Guide to Investing in Stocks</h1>
+<p class="text-sm text-gray-500 mb-4">Published: Feb 21, 2026 | Author: FinanceConnect Editorial Team</p>
 <img src="https://images.unsplash.com/photo-1606755962774-9dc1f23b1d12" class="w-full rounded mb-6" alt="Stock investing">
-<p>Investing in stocks is a powerful way to grow wealth over time. For beginners, understanding how the market works and how to start safely is crucial.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">1. Understand Stock Basics</h2>
-<p>Stocks represent ownership in a company. Stock prices fluctuate based on company performance, market trends, and investor sentiment.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">2. Open a Brokerage Account</h2>
-<p>Choose a reliable brokerage with low fees and easy access. Online brokers provide tools and research for new investors.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">3. Start with Index Funds</h2>
-<p>Index funds offer diversification by tracking the market. They are lower risk than picking individual stocks and ideal for beginners.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">4. Set Investment Goals</h2>
-<p>Determine your risk tolerance, time horizon, and target returns. Align investments with financial objectives to stay disciplined.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">5. Monitor & Adjust</h2>
-<p>Review performance periodically and rebalance as needed. Avoid reacting emotionally to short-term market swings.</p>
-<p>Investing wisely requires patience and continuous learning. With consistent effort, your portfolio can grow significantly over the long term.</p>
-<img src="https://images.unsplash.com/photo-1603079841927-9e57c7d91dbb" class="w-full rounded mt-6 mb-6" alt="Stock market portfolio">
-`,
+<p>Investing in stocks is a powerful way to grow wealth over time...</p>`,
 
-article4: `
-<h1 class="text-3xl font-bold mb-4 text-blue-700">Fixed vs Variable Interest Rates Explained</h1>
+article4: `<h1 class="text-3xl font-bold mb-2 text-blue-700">Fixed vs Variable Interest Rates Explained</h1>
+<p class="text-sm text-gray-500 mb-4">Published: Feb 21, 2026 | Author: FinanceConnect Editorial Team</p>
 <img src="https://images.unsplash.com/photo-1601597114401-7ff0e0c3cdde" class="w-full rounded mb-6" alt="Interest rates explained">
-<p>Choosing between fixed and variable interest rates affects loans, mortgages, and investment borrowing. Understanding differences is critical.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">1. Fixed Interest Rates</h2>
-<p>Fixed rates stay the same for the loan term. Predictable payments make budgeting easier, though rates may be higher initially.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">2. Variable Interest Rates</h2>
-<p>Variable rates fluctuate with market indices. They may start lower but can increase over time, affecting monthly payments.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">3. Pros and Cons</h2>
-<p>Fixed: stable, predictable; Variable: potential savings if rates fall, but risk of higher cost if rates rise.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">4. When to Choose Which</h2>
-<p>Long-term loans and risk-averse borrowers often prefer fixed. Short-term loans or flexible plans may benefit from variable rates.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">5. Evaluate Total Cost</h2>
-<p>Consider total repayment, interest paid over the term, and your financial comfort when choosing a rate type.</p>
-<p>Understanding rates helps make informed financial decisions and avoid surprises during repayment.</p>
-<img src="https://images.unsplash.com/photo-1565372918482-2cdeaa15f887" class="w-full rounded mt-6 mb-6" alt="Fixed vs variable rates">
-`,
+<p>Choosing between fixed and variable interest rates affects loans...</p>`,
 
-article5: `
-<h1 class="text-3xl font-bold mb-4 text-blue-700">Building Long-Term Wealth Strategies</h1>
-<img src="https://images.unsplash.com/photo-1567427018141-0584cfcbf1a3" class="w-full rounded mb-6" alt="Wealth growth strategies">
-<p>Long-term wealth building is about planning, discipline, and consistent action. Start early and focus on compounding growth.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">1. Set Financial Goals</h2>
-<p>Define short-term and long-term goals. Know what you want to achieve and plan steps accordingly.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">2. Invest Consistently</h2>
-<p>Regular contributions to diversified portfolios help wealth grow. Dollar-cost averaging reduces timing risk.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">3. Diversify Assets</h2>
-<p>Spread investments across stocks, bonds, real estate, and other assets to reduce risk.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">4. Minimize Debt</h2>
-<p>High-interest debt erodes wealth. Prioritize paying off debts before expanding investments.</p>
-<h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">5. Monitor and Adjust</h2>
-<p>Review portfolio regularly. Adjust asset allocation and contributions as needed to stay on track.</p>
-<p>Patience, discipline, and informed decisions are the keys to long-term wealth creation.</p>
-<img src="https://images.unsplash.com/photo-1600195077079-dbc7f5aa364c" class="w-full rounded mt-6 mb-6" alt="Financial growth planning">
-`
+article5: `<h1 class="text-3xl font-bold mb-2 text-blue-700">Building Long-Term Wealth Strategies</h1>
+<p class="text-sm text-gray-500 mb-4">Published: Feb 21, 2026 | Author: FinanceConnect Editorial Team</p>
+<img src="https://images.unsplash.com/photo-1600195077079-dbc7f5aa364c" class="w-full rounded mb-6" alt="Wealth growth strategies">
+<p>Long-term wealth building is about planning, discipline, and consistent action...</p>`
 };
 
-function openModal(id) {
-document.getElementById("modalContent").innerHTML = articles[id];
+function openModal(id){
+document.getElementById("modalContent").innerHTML=articles[id];
 document.getElementById("modalContainer").classList.remove("hidden");
 }
 
-function closeModal() {
+function closeModal(){
 document.getElementById("modalContainer").classList.add("hidden");
 }
 
-document.getElementById("menuBtn").onclick = function() {
+document.getElementById("menuBtn").onclick = function(){
 document.getElementById("mobileMenu").classList.toggle("hidden");
 }
 </script>
