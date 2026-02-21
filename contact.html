@@ -5,6 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinanceConnect - Contact</title>
+    <meta name="description" content="Reach FinanceConnect via email or WhatsApp. We aim to respond within 24 hours.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bankadvertisers.site/contact.html">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "FinanceConnect Contact Page",
+      "url": "https://bankadvertisers.site/contact.html",
+      "contactType": "customer support",
+      "description": "Contact FinanceConnect via email or WhatsApp. We aim to respond within 24 hours."
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -46,10 +62,10 @@
         </div>
     </header>
 
+    <!-- MOBILE SCRIPT -->
     <script>
         const menuBtn = document.getElementById("menu-btn");
         const mobileMenu = document.getElementById("mobile-menu");
-
         menuBtn.addEventListener("click", () => {
             mobileMenu.classList.toggle("hidden");
         });
@@ -62,8 +78,8 @@
 
         <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md grid gap-6">
 
-            <p class="text-gray-700 text-center">
-                Need to reach us? You can contact us via email or WhatsApp. We aim to respond within 24 hours.
+            <p class="text-gray-700 text-center font-semibold">
+                Need to reach us? We aim to respond within 24 hours via the following channels.
             </p>
 
             <!-- Email Link -->
@@ -78,19 +94,10 @@
                 Chat on WhatsApp
             </a>
 
-            <!-- Optional Contact Form (simple) -->
-            <form action="mailto:ubamaragreat@gmail.com" method="post" enctype="text/plain" class="grid gap-4">
-                <input type="text" name="Name" placeholder="Full Name"
-                    class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
-                <input type="email" name="Email" placeholder="Email Address"
-                    class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
-                <textarea name="Message" placeholder="Your Message" rows="5"
-                    class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"></textarea>
-                <button type="submit"
-                    class="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition font-semibold">
-                    Send Message
-                </button>
-            </form>
+            <!-- Optional Form Placeholder -->
+            <p class="text-gray-600 text-center mt-4">
+                Contact form submissions should be handled via server-side or a form service (e.g., Formspree) for reliability.
+            </p>
 
         </div>
 
@@ -104,6 +111,3 @@
 </body>
 
 </html>
-
-
-
