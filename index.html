@@ -37,6 +37,17 @@
     <script async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1496447698823052"
         crossorigin="anonymous"></script>
+
+    <style>
+        .modal-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .modal-scroll::-webkit-scrollbar-thumb {
+            background: #2563eb;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-50 font-sans">
@@ -141,6 +152,43 @@
             </div>
         </section>
 
+        <!-- Featured Articles -->
+        <section class="max-w-6xl mx-auto px-6 py-16">
+            <h3 class="text-3xl font-bold text-blue-800 mb-10 text-center">
+                Featured Articles
+            </h3>
+
+            <div class="grid gap-8 md:grid-cols-2">
+
+                <!-- Article 1 -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+                    <h4 class="text-xl font-bold mb-3">How to Improve Your Credit Score Fast</h4>
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" class="w-full rounded mb-4"
+                        alt="Credit score improvement">
+                    <p class="text-gray-600 mb-4">
+                        Learn practical strategies to increase your credit score and improve your financial credibility quickly.
+                    </p>
+                    <button onclick="openModal('homeArticle1')" class="text-blue-600 underline">
+                        Read Full Article →
+                    </button>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+                    <h4 class="text-xl font-bold mb-3">Top Personal Loan Options in 2026</h4>
+                    <img src="https://images.unsplash.com/photo-1567427018141-0584cfcbf1a3" class="w-full rounded mb-4"
+                        alt="Personal loan options">
+                    <p class="text-gray-600 mb-4">
+                        Compare interest rates, loan terms, and eligibility requirements to find the best personal loan for your needs.
+                    </p>
+                    <button onclick="openModal('homeArticle2')" class="text-blue-600 underline">
+                        Read Full Article →
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
         <!-- CTA -->
         <section class="bg-blue-100 py-16 text-center px-6">
             <h3 class="text-2xl font-bold mb-4">Explore Financial Resources</h3>
@@ -155,6 +203,52 @@
         </section>
 
     </main>
+
+    <!-- MODAL -->
+    <div id="modalContainer" class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50">
+        <div class="bg-white max-w-4xl w-full rounded-lg p-8 overflow-y-auto max-h-[90vh] modal-scroll relative">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-2xl">×</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        const articles = {
+            homeArticle1: `
+                <h1 class="text-3xl font-bold mb-4 text-blue-700">How to Improve Your Credit Score Fast</h1>
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" class="w-full rounded mb-6" alt="Credit score improvement">
+                <p>Your credit score is a crucial number in your financial life. High scores unlock better credit cards, loans, and interest rates. Follow these steps to improve it quickly:</p>
+                <h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">1. Pay Bills On Time</h2>
+                <p>Set reminders or auto-pay for all your bills. Payment history is 35% of your credit score, so on-time payments make a big difference.</p>
+                <h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">2. Reduce Credit Utilization</h2>
+                <p>Keep credit card balances under 30% of your limit. Lower utilization signals financial responsibility to lenders.</p>
+                <h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">3. Avoid Hard Inquiries</h2>
+                <p>Limit applications for new credit. Too many inquiries can reduce your score temporarily.</p>
+                <p>Consistency and monitoring are key. Over months, these habits significantly improve your credit profile.</p>
+            `,
+            homeArticle2: `
+                <h1 class="text-3xl font-bold mb-4 text-blue-700">Top Personal Loan Options in 2026</h1>
+                <img src="https://images.unsplash.com/photo-1567427018141-0584cfcbf1a3" class="w-full rounded mb-6" alt="Personal loan options">
+                <p>Personal loans are ideal for debt consolidation, emergency expenses, or major purchases. Compare lenders to find the best fit.</p>
+                <h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">1. Compare Interest Rates</h2>
+                <p>Lower interest rates reduce repayment amounts. Check multiple lenders before applying.</p>
+                <h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">2. Check Loan Terms</h2>
+                <p>Understand repayment schedules and total cost. Shorter terms save interest but increase monthly payments.</p>
+                <h2 class="text-2xl font-semibold mt-6 mb-3 text-blue-600">3. Review Fees & Eligibility</h2>
+                <p>Watch for origination fees or penalties. Ensure you meet income and credit requirements for approval.</p>
+                <p>Choosing wisely helps you borrow responsibly and avoid unnecessary costs.</p>
+            `
+        };
+
+        function openModal(id) {
+            document.getElementById("modalContent").innerHTML = articles[id];
+            document.getElementById("modalContainer").classList.remove("hidden");
+        }
+
+        function closeModal() {
+            document.getElementById("modalContainer").classList.add("hidden");
+        }
+    </script>
 
     <!-- Footer -->
     <footer class="bg-blue-800 text-white text-center py-8 mt-10">
