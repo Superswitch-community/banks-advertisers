@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Tags -->
+    <meta name="author" content="Your Name Here">
+    <meta name="description" content="A full Tailwind HTML page template with responsive navbar, author info, publish date, headings, and structured content.">
+    <meta name="keywords" content="HTML, Tailwind CSS, responsive navbar, template, author info, headings, publish date">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tailwind Website Template">
+    <meta property="og:description" content="Responsive website template with Tailwind CSS, navbar, meta tags, and structured content.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com">
+    <meta property="og:image" content="https://www.example.com/image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tailwind Website Template">
+    <meta name="twitter:description" content="Responsive website template with Tailwind CSS, navbar, meta tags, and structured content.">
+    <meta name="twitter:image" content="https://www.example.com/image.jpg">
+
+    <title>Tailwind Website Template</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-gray-100 to-gray-200 min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <header class="bg-gray-800 text-white">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold">MySite</div>
+            <input type="checkbox" id="menu-toggle" class="hidden">
+            <label for="menu-toggle" class="cursor-pointer md:hidden text-3xl">&#9776;</label>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#features" class="hover:text-gray-300">Features</a></li>
+                <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 bg-gray-700 p-4">
+            <li><a href="#home" class="block text-white">Home</a></li>
+            <li><a href="#features" class="block text-white">Features</a></li>
+            <li><a href="#about" class="block text-white">About</a></li>
+            <li><a href="#contact" class="block text-white">Contact</a></li>
+        </ul>
+    </header>
+
+    <main class="container mx-auto flex-1 p-6 bg-white shadow-lg rounded-md mt-6">
+        <div class="text-sm text-gray-600 mb-2">Author: Your Name Here</div>
+        <div class="text-sm text-gray-600 mb-4">Published: February 21, 2026</div>
+
+        <h1 class="text-3xl font-bold mb-4">Welcome to My Tailwind Template</h1>
+
+        <h2 class="text-2xl font-semibold mb-2">Introduction</h2>
+        <p class="mb-4">This template is built with Tailwind CSS and includes a responsive navbar, meta tags, author info, and structured headings for your website.</p>
+
+        <h2 class="text-2xl font-semibold mb-2">Features</h2>
+        <h3 class="text-xl font-semibold mb-1">Meta Tags</h3>
+        <p class="mb-2">SEO-friendly meta tags for description, keywords, Open Graph, and Twitter Card.</p>
+        
+        <h3 class="text-xl font-semibold mb-1">Responsive Navbar</h3>
+        <p class="mb-2">Mobile-friendly navbar that collapses into a hamburger menu on smaller screens.</p>
+
+        <h3 class="text-xl font-semibold mb-1">Structured Headings</h3>
+        <p class="mb-2">Use H1, H2, H3 to organize your content for readability and SEO.</p>
+
+        <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
+        <p>This page serves as a solid "background" template for any website, ready to expand with content, sidebars, or custom styles.</p>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center mt-6">
+        &copy; 2026 Your Name Here | All rights reserved
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('change', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
